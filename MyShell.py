@@ -8,6 +8,7 @@ from MainApp.models import Topic, Entry #MainApp is the application
 
 topics = Topic.objects.all() #all gets all filter if specific Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process 
 
+
 t = Topic.objects.get(id=1)
 print(t)
 entries=t.entry_set.all() ##because of the foregin key relationship we set in the model 
